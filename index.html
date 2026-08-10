@@ -1,22 +1,211 @@
+
+
 <!DOCTYPE html>
--<html lang="en">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vera's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Web Developer Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            color: #1f2937;
+        }
+
+        .wrapper {
+            max-width: 760px;
+            margin: 24px auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+            overflow: hidden;
+            border: 1px solid #dbe2ea;
+        }
+
+        header {
+            padding: 24px;
+            background: #0f172a;
+            color: #f8fafc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            color: #cbd5e1;
+        }
+
+        .passport {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: #1e293b;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            color: #e2e8f0;
+        }
+
+        .section {
+            padding: 24px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #0f172a;
+        }
+
+        .text-muted {
+            color: #475569;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li,
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background: #e2e8f0;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.95rem;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .item-title {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .item-meta {
+            margin: 4px 0 0;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .item-description {
+            margin: 10px 0 0;
+            color: #475569;
+            line-height: 1.6;
+            font-size: 0.98rem;
+        }
+
+        @media (max-width: 640px) {
+            .wrapper {
+                margin: 12px;
+                padding: 16px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <h1>Vera Ifiona Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3><a href="./public/movie-ranking-v.png">Movie Ranking Project</a></h3>
-  <img src="./assets/images/movie-ranking-v.png" height="200" alt="movie ranking project preview"/>
-  <h3><a href="./public/birthday-invites.png">Birthday Invite Project</a></h3>
-  <img src="./assets/images/birthday-invites.png" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./public/about-vera.png">About Me</a>
-  <a href="./public/contact-v.png">Contact Me</a>
-</body>
+    <div class="wrapper">
+        <div class="card">
+            <header>
+                <h1>Jane Doe</h1>
+                <p>Beginner Web Developer | HTML • CSS • JavaScript</p>
+                <div class="passport">
+                    Passport: A12345678
+                </div>
+            </header>
 
+            <section class="section">
+                <div class="section-title">Contact</div>
+                <ul class="contact-list">
+                    <li>Email: jane.doe@example.com</li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Location: Lagos, Nigeria</li>
+                    <li>Portfolio: jane-doe.dev</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <div class="section-title">About Me</div>
+                <p class="text-muted">Motivated beginner web developer with hands-on projects in responsive websites and interactive UI. Eager to learn new tools and contribute to small web teams while building real-world experience.</p>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Skills</div>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>Git</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Projects</div>
+                <div class="item">
+                    <p class="item-title">Personal Portfolio Website</p>
+                    <p class="item-meta">HTML, CSS, JavaScript</p>
+                    <p class="item-description">Built a responsive portfolio site with a project gallery, contact form, and mobile-friendly navigation.</p>
+                </div>
+                <div class="item">
+                    <p class="item-title">To-Do List App</p>
+                    <p class="item-meta">JavaScript, DOM Manipulation</p>
+                    <p class="item-description">Created a task manager with add, remove, and complete functions, plus local storage persistence.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Education</div>
+                <div class="item">
+                    <p class="item-title">Web Development Bootcamp</p>
+                    <p class="item-meta">Online Course — 2024</p>
+                    <p class="item-description">Completed a beginner-friendly web development course focused on HTML, CSS, JavaScript, and building portfolio projects.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Experience</div>
+                <div class="item">
+                    <p class="item-title">Freelance Website Builder</p>
+                    <p class="item-meta">2024</p>
+                    <p class="item-description">Designed and launched simple websites for friends and small local businesses, focusing on clear layouts and responsive design.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
 </html>
